@@ -8,6 +8,7 @@ ruby '2.5.1'
 gem 'rails_12factor', group: :production
 gem 'pg', group: :production
 gem 'unicorn', group: :production
+gem 'rack-timeout'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.1'
