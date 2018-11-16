@@ -47,17 +47,17 @@ test:
 #   production:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
-production:
-  <<: *default
-  database: myrails_production
-  username: myrails
-  password: <%= ENV['MYRAILS_DATABASE_PASSWORD'] %>
-
 #production:
-#  adapter: mysql2
-#  encoding: utf8
-#  database: <%= ENV['ebdb'] %>
-#  username: <%= ENV['Minorelli'] %>
+#  <<: *default
+#  database: myrails_production
+#  username: myrails
+#  password: <%= ENV['MYRAILS_DATABASE_PASSWORD'] %>
+
+production:
+  adapter: heroku pg:psql postgresql-cubed-80962 --app cptstation
+  encoding: utf8
+  database: <%= ENV['d2ogtedrp2g5pe'] %>
+  username: <%= ENV['erxabnvyveqnrq'] %>
 #  password: <%= ENV['Minorelli'] %>
-#  host: <%= ENV['arn:aws:rds:sa-east-1:925868070385:db:aa1s3k3jfd8gbkr'] %>
-#  port: <%= ENV['3306'] %>
+  host: <%= ENV['ec2-50-19-249-121.compute-1.amazonaws.com'] %>
+  port: <%= ENV['5432'] %>
