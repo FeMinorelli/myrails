@@ -52,3 +52,12 @@ production:
   database: myrails_production
   username: myrails
   password: <%= ENV['MYRAILS_DATABASE_PASSWORD'] %>
+
+#production:
+#  adapter: mysql2
+#  encoding: utf8
+#  database: <%= ENV['ebdb'] %>
+#  username: <%= ENV['Minorelli'] %>
+#  password: <%= ENV['Minorelli'] %>
+#  host: <%= ENV['arn:aws:rds:sa-east-1:925868070385:db:aa1s3k3jfd8gbkr'] %>
+#  port: <%= ENV['3306'] %>
